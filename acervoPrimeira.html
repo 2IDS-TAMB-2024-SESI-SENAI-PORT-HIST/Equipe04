@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acervo-1°Geração</title>
+    <link rel="website icon" type="png" href="assets/images/outros/logo.png">
+    <link rel="stylesheet" href="styles/styleAcervo.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="containerr">
+          <img src="assets/images/outros/logo.png" alt="Logo" id="logo">
+          <h1 style="color: white; font-weight: bold; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Acervo Primeira Geração</h1> 
+          <ul class="nav-links">
+            <li><a href="index.html">TimeLine-Modernismo</a></li>
+            <li><a href="playerMusicas.html">Músicas</a></li>
+            <li><a href="acervo.html">Acervo</a></li>
+          </ul>
+        </div>
+      </nav>
+      <main>
+        <div class="cards">
+          <div class="total">
+            <div class="card" id="abapouru">
+                    <h1 class="titulo">
+                        Abaporu  
+                    </h1>
+                    <img src="assets/images/primeira_fase/abapouru.webp" class="imgAcervo">
+            </div>
+            <div class="pt2">
+                    <p>
+                        Concebido em 1928 por Tarsila do Amaral, o quadro “O Abaporu” foi na verdade um presente de aniversário ao seu marido à época, Oswald de Andrade.
+                    </p>
+                    <p>
+                        Abaporu é uma pintura a óleo da artista brasileira Tarsila do Amaral. É uma das principais obras do período antropofágico do movimento modernista no Brasil.
+                    </p>
+            </div>
+          </div>
+          <div class="total">
+            <div class="card" id="tropical">
+                    <h1 class="titulo">
+                        Tropical  
+                    </h1>
+                    <img src="assets/images/primeira_fase/tropical.webp" class="imgAcervo" style="height: 230px;">
+            </div>
+            <div class="pt2">
+                    <p>
+                        Foi produzido por Anita Malafatti, em 1917.
+                    </p>
+                    <p>
+                      Ao representar a flora e as frutas tropicais típicas do Brasil, a autora buscava valorizar o que é nacional.
+                    </p>
+                    <p>
+                      A artista não utiliza de nenhum padrão renascentista em sua obra, o que mostra a vontade modernista de romper com os valores clássicos
+                    </p>
+            </div>
+          </div>
+          <div class="total">
+            <div class="card" id="libertinagem">
+                <h1 class="titulo">
+                  Libertinagem
+                </h1>
+                <img src="assets/images/primeira_fase/libertinagem.jpg" alt="" class="imgAcervo">
+            </div>
+            <div class="pt2">
+                <p>
+                  Libertinagem é o quarto livro de poesia do escritor brasileiro Manuel Bandeira, publicado em 1930. É composto por 38 poemas, entre os quais se destacam Pneumotórax, Pensão familiar, Profundamente e Vou-me embora pra Pasárgada. Os poemas de Libertinagem contém humor, erotismo e refinamento musical.
+                </p>
+            </div>
+          </div>
+          <div class="total">
+            <div class="card" id="manifesto">
+              <h1 class="titulo">
+                Manifesto da Poesia Pau-Brasil
+              </h1>
+              <img src="assets/images/primeira_fase/pau-brasil.webp" alt="" class="imgAcervo">
+            </div>
+            <div class="pt2">
+              <p>
+                Esrito por Oswald de Andrade em 18 de março de 1924.
+              </p>
+              <p>
+                Manifesto da Poesia Pau-Brasil é um manifesto que apresenta as noções estéticas que iriam nortear o seu trabalho em poesia e o de outros modernistas brasileiros, influenciando também a escrita de poetas estrangeiros, como o francês Blaise Cendrars.
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+</body>
+</html>
+<script>
+    const abaporu = document.querySelector('#abapouru');
+    abaporu.addEventListener('click',()=>{
+      window.open('https://www.culturagenial.com/abaporu/')
+    })
+
+    const tropical = document.querySelector('#tropical');
+    tropical.addEventListener('click',()=>{
+      window.open('https://www.historiadasartes.com/sala-dos-professores/tropical-anita-malfatti/')
+    })
+
+    const libertinagem = document.querySelector('#libertinagem');
+    libertinagem.addEventListener('click',()=>{
+      window.open('https://www.castroweb.com.br/castrodigital/Arquivos2019/CastroDigital_Libertinagem_manuel_bandeira.pdf')
+    })
+
+     const manifesto = document.querySelector('#manifesto');
+    manifesto.addEventListener('click',()=>{
+      window.open('https://prioste2015.wordpress.com/wp-content/uploads/2015/03/oswaldmanifestos.pdf')
+    })
+</script>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player de Música</title>
+    <link rel="stylesheet" href="styles/stylePlayer.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="containerr">
+            <img src="assets/images/outros/logo.png" alt="Logo" id="logo">
+            <h1 style="color: white;" id="title">Sala de Músicas</h1> 
+            <ul class="nav-links">
+                <li><a href="index.html">TimeLine-Modernismo</a></li>
+                <li><a href="acervo.html">Acervo de Obras</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="playlist-container">
+        <h2 >Músicas Modernistas</h2>
+        <img src="assets/images/outros/playlistFoto.jpg" alt="" style="width: 70%;">
+        <select id="playlist-selector">
+            <option value="playlist1">Primeira Geração</option>
+            <option value="playlist2">Segunda Geração</option>
+            <option value="playlist3">Terceira Geração</option>
+        </select>
+        <button id="load-player">Ouvir Playlist</button>
+    </div>
+
+    <div id="player-container" class="hidden">
+        <div class="player">
+            <div class="cover">
+                <img id="cover" src="" alt="Capa do Álbum">
+            </div>
+            <div class="controls">
+                <button id="prev">&#9664;</button>
+                <button id="play">PLAY</button>
+                <button id="next">&#9654;</button>
+            </div>
+            <div class="track-info">
+                <p id="track-name">Nome da Faixa</p>
+            </div>
+            <div class="progress-container">
+                <input id="progress" type="range" value="0" min="0" max="100">
+                <div id="time">
+                    <span id="current-time">00:00</span> / <span id="duration">00:00</span>
+                </div>
+            </div>
+            <audio id="audio">
+                Seu navegador não suporta o elemento audio.
+            </audio> 
+            <!-- <button id="voltar">Voltar para as Playlists</button> -->
+             <img src="assets/images/outros/arrow_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="" id="voltar">
+        </div>
+       
+    </div>
+    
+    <script src="scripts/scriptPlayer.js"></script>
+</body>
+</html>

@@ -1,0 +1,307 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    background-image: url('../assets/images/outros/teste.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding-top: 60px; /* Ajustado para o tamanho da navbar */
+}
+
+#playlist-container, .player {
+    text-align: center;
+    color: #fff;
+    background: rgba(109, 73, 38, 0.9);
+    border-radius: 8px;
+    padding: 20px;
+    width: 90%;
+    max-width: 300px; /* Largura máxima para telas maiores */
+    margin: 0 auto;
+}
+
+.cover img {
+    width: 100%;
+    border-radius: 8px;
+    height: auto; /* Ajusta a altura automaticamente */
+}
+
+#playlist-selector, #load-player {
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#playlist-selector {
+    background: #fff;
+    color: #000;
+}
+
+#load-player {
+    background: rgb(161, 108, 58);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#load-player:hover {
+    background: rgb(151, 107, 66);
+}
+
+.hidden {
+    display: none;
+}
+
+.player {
+    text-align: center;
+    color: #fff;
+    background: rgba(109, 73, 38, 0.9);
+    border-radius: 8px;
+    padding: 20px;
+    width: 90%;
+    max-width: 300px;
+    margin-top: 20%; /* Ajuste mais sutil */
+}
+
+#play {
+    font-style: oblique;
+}
+
+.controls {
+    margin: 20px 0;
+}
+
+button {
+    background: rgb(161, 108, 58);
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 0 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgb(151, 107, 66);
+}
+
+button:focus {
+    outline: none;
+}
+
+.track-info {
+    margin-top: 10px;
+}
+
+#track-name {
+    font-weight: bold;
+    font-size: large;
+    font-style: oblique;
+}
+
+.progress-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+input[type="range"] {
+    width: 100%;
+    -webkit-appearance: none;
+    background: rgba(133,91,59,0.95);
+    height: 5px;
+    border-radius: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#time {
+    color: #ccc;
+    margin-top: 5px;
+}
+
+#time span {
+    font-weight: bold;
+    font-style: oblique;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(133,91,59,0.95);
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.containerr {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: rgba(255, 255, 255, 0.8);
+    border-bottom: rgba(178, 133, 91) solid 2px;
+}
+
+#logo {
+    width: 7%;
+}
+
+#voltar {
+    width: 10%;
+    cursor: pointer;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 1024px) {
+    /* Navbar ajustes para tablets */
+    .containerr {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin: 0.5rem 0;
+    }
+
+    #logo {
+        width: 10%;
+    }
+
+    #voltar {
+        width: 15%;
+    }
+
+    /* Ajuste dos contêineres quando a navbar é visível */
+    body {
+        padding-top: 80px; /* Ajustado para mais espaço quando necessário */
+    }
+
+    .player, #playlist-container {
+        margin-top: 25%; /* Ajustado para menos margem superior */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Playlist e Player ajustes para telas menores */
+    #playlist-container, .player {
+        padding: 15px;
+        margin-top: 15%; /* Ajuste para altura menor da tela */
+    }
+
+    #playlist-selector, #load-player {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .cover img {
+        height: auto;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+
+    #logo {
+        width: 15%;
+    }
+
+    #voltar {
+        width: 15%;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustes para dispositivos móveis muito pequenos */
+    #playlist-container, .player {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10%; /* Ajuste mais sutil */
+    }
+
+    #playlist-selector, #load-player {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .cover img {
+        height: auto;
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    #logo {
+        width: 20%;
+    }
+
+    #voltar {
+        width: 20%;
+    }
+}
